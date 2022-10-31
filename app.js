@@ -43,7 +43,6 @@ var addTask = function () {
   //Create a new list item with the text from the #new-task:
   if (!taskInput.value) return;
   var listItem = createNewTaskElement(taskInput.value);
-
   //Append listItem to incompleteTaskHolder
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
@@ -52,7 +51,6 @@ var addTask = function () {
 };
 
 //Edit an existing task.
-
 var editTask = function () {
   const logs = ["Edit Task...", "Change 'edit' to 'save'"];
 
@@ -68,15 +66,12 @@ var editTask = function () {
   var containsClass = listItem.classList.contains("editMode");
   //If class of the parent is .editmode
   if (containsClass) {
-    //switch to .editmode
     label.innerText = editInput.value;
     editBtn.innerText = "Edit";
   } else {
     editInput.value = label.innerText;
     editBtn.innerText = "Save";
   }
-
-  //toggle .editmode on the parent.
   listItem.classList.toggle("editMode");
 };
 
@@ -91,7 +86,6 @@ var deleteTask = function () {
 
 var taskCompleted = function () {
   console.log("Complete Task...");
-
   //Append the task list item to the #completed-tasks
   var listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
@@ -110,7 +104,6 @@ var ajaxRequest = function () {
   console.log("AJAX Request");
 };
 
-//Set the click handler to the addTask function.
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
