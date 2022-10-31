@@ -54,8 +54,11 @@ var addTask = function () {
 //Edit an existing task.
 
 var editTask = function () {
-  console.log("Edit Task...");
-  console.log("Change 'edit' to 'save'");
+  const logs = ["Edit Task...", "Change 'edit' to 'save'"];
+
+  for (let i = 0; i < logs.length; i++) {
+    console.log(logs[i]);
+  }
 
   var listItem = this.parentNode;
 
@@ -106,7 +109,6 @@ var taskIncomplete = function () {
 var ajaxRequest = function () {
   console.log("AJAX Request");
 };
-
 
 //Set the click handler to the addTask function.
 addButton.addEventListener("click", addTask);
