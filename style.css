@@ -44,7 +44,7 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -87,7 +87,6 @@ label[for='new-task'] {
     font-weight: 700;
     font-size: 15px;
     border-bottom: 2px solid var(--dark-gray);
-    ;
     padding: 30px 0 10px;
     margin: 0;
     text-transform: uppercase;
@@ -146,7 +145,7 @@ li>label {
 }
 
 li>input[type="text"] {
-    width: 226px
+    width: 226px;
 }
 
 button.delete img {
@@ -167,12 +166,12 @@ ul#completed-tasks label {
 
 /* Edit Task */
 ul li input[type=text] {
-    display: none
+    display: none;
 }
 
 ul li.editMode input[type=text] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 ul li.editMode label {
