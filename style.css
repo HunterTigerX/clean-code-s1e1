@@ -1,10 +1,6 @@
 :root {
     --dark-gray: #333;
     --font-Lato: Lato, sans-serif;
-    --new-left: 0;
-    --new-top: 0;
-    --old-left: 0;
-    --old-top: 0;
 }
 
 /* Basic Style */
@@ -165,15 +161,11 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li.editMode label, ul li input[type=text] {
     display: none;
 }
 
 ul li.editMode input[type=text] {
     display: inline-block;
     width: 224px;
-}
-
-ul li.editMode label {
-    display: none;
 }
