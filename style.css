@@ -1,8 +1,17 @@
+:root {
+    --dark-gray: #333;
+    --font-Lato: Lato, sans-serif;
+    --new-left: 0;
+    --new-top: 0;
+    --old-left: 0;
+    --old-top: 0;
+}
+
 /* Basic Style */
 body {
     background-color: #f8f8f8;
-    color: #333;
-    font-family: Lato, sans-serif;
+    color: var(--dark-gray);
+    font-family: var(--font-Lato);
 }
 
 .eisenhower-matrix {
@@ -63,7 +72,7 @@ button {
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: Lato, sans-serif;
+    font-family: var(--font-Lato);
     cursor: pointer;
 }
 
@@ -74,10 +83,10 @@ button:hover {
 /* Heading */
 h3,
 label[for='new-task'] {
-    color: #333;
+    color: var(--dark-gray);
     font-weight: 700;
     font-size: 15px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--dark-gray);;
     padding: 30px 0 10px;
     margin: 0;
     text-transform: uppercase;
@@ -92,12 +101,12 @@ input[type="text"] {
     border: 1px solid #ddd;
     background: #fff;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
+    font-family: var(--font-Lato);
     color: #888;
 }
 
 input[type="text"]:focus {
-    color: #333;
+    color: var(--dark-gray);
 }
 
 /* New Task */
@@ -115,7 +124,6 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,18 +162,4 @@ button.delete img:hover {
 ul#completed-tasks label {
     text-decoration: line-through;
     color: #888;
-}
 
-/* Edit Task */
-ul li input[type=text] {
-    display: none
-}
-
-ul li.editMode input[type=text] {
-    display: inline-block;
-    width: 224px
-}
-
-ul li.editMode label {
-    display: none;
-}
