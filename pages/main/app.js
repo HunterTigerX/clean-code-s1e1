@@ -4,6 +4,7 @@ var incompleteTaskHolder = document.getElementById("incompleteTasks"); //ul of #
 var completedTasksHolder = document.getElementById("completed-tasks");
 
 var createNewTaskElement = function (taskString) {
+  console.log("123")
   var listItem = document.createElement("li");
 
   var checkBox = document.createElement("input");
@@ -26,6 +27,7 @@ var createNewTaskElement = function (taskString) {
 
   deleteButton.className = "delete";
   deleteButtonImg.src = "../../assets/svg/remove-button-image.svg";
+  console.log(deleteButtonImg.src)
   deleteButton.appendChild(deleteButtonImg);
 
   listItem.appendChild(checkBox);
@@ -62,6 +64,7 @@ var editTask = function () {
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".edit");
   var containsClass = listItem.classList.contains("edit-mode");
+  console.log(listItem, editInput, label, editBtn, containsClass)
   //If class of the parent is .edit-mode
   if (containsClass) {
     label.innerText = editInput.value;
