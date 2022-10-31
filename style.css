@@ -161,7 +161,8 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li.editMode label, ul li input[type=text] {
+ul li.editMode label,
+ul li input[type=text] {
     display: none;
 }
 
