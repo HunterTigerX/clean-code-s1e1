@@ -168,11 +168,17 @@ input[type="text"] {
 
 /* Edit Task */
 .list-style.edit-mode label,
-.list-style input[type=text] {
+.edit-text,
+#completed-tasks .edit-mode .list-style-label,
+#completed-tasks .list-style .input-text-style {
     display: none;
 }
 
-#edit-text {
+.edit-mode .edit-text {
     display: inline-block;
     width: 224px;
+}
+
+#completed-tasks .edit-mode .input-text-style {
+    display: inline-block;
 }
