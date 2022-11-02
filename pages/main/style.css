@@ -30,7 +30,7 @@
     .eisenhower-matrix {
         text-align: center;
     }
-    
+
 }
 
 .todo-list-block {
@@ -90,7 +90,7 @@ button:hover {
 
 /* Heading */
 .header-three-style,
-label[for="new-task"] {
+.new-task {
     color: var(--dark-gray);
     font-weight: 700;
     font-size: 15px;
